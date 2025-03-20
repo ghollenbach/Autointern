@@ -1,6 +1,6 @@
 import './App.css';
-import Home from './Home';
-import Use from './Use';
+import Home from './Home.jsx';
+import Use from './Use.jsx';
 
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
@@ -15,14 +15,14 @@ function App() {
                     <img src="/monkey.png" alt="AutoIntern Logo" className="logo" />
                 </Link>
               </li>
-              <li><Link to="/Home">Home</Link></li>
-              <li><Link to="/Use">Use</Link></li>
+              <li><Link to="/home">Home</Link></li>
+              <li><Link to="/use">Use</Link></li>
             </ul>
 
           </nav>
           <Routes>
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Use" element={<Use />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/use" element={<Use />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
