@@ -2,7 +2,7 @@ import reportWebVitals from './reportWebVitals';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'; // Import CSS (if needed)
-import App from './App'; // Import your main App component
+import App from './App.jsx'; // Import your main App component
 
 ReactDOM.render(
   <React.StrictMode>
