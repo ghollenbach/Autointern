@@ -1,9 +1,19 @@
 import './App.css';
 import Home from 'src/Home.jsx';
 import Use from 'src/Use.jsx';
-
+import React from "react";
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
+function App() {
+    console.log("App.jsx is being rendered!");
+    return (
+        <div>
+            <h1>Hello, React is working!</h1>
+        </div>
+    );
+}
+
+/*
 function App() {
     return (
       <Router>
@@ -70,5 +80,6 @@ function downloadCSV(csvString, filename) {
 
 const csvString = convertToCSV(data);
 downloadCSV(csvString, 'user_data.csv');
+*/
 
 export default App;
