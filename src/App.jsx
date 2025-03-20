@@ -1,19 +1,9 @@
 import './App.css';
-import Home from './Home.jsx';
-import Use from './Use.jsx';
-import React from "react";
+import Home from '/workspaces/codespaces-react/src/Home.jsx';
+import Use from '/workspaces/codespaces-react/src/Use.jsx';
+
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
-function App() {
-    console.log("App.jsx is being rendered!");
-    return (
-        <div>
-            <h1>Hello, React is working!</h1>
-        </div>
-    );
-}
-
-/*
 function App() {
     return (
       <Router>
@@ -25,14 +15,14 @@ function App() {
                     <img src="/monkey.png" alt="AutoIntern Logo" className="logo" />
                 </Link>
               </li>
-              <li><Link to="/home">Home</Link></li>
-              <li><Link to="/use">Use</Link></li>
+              <li><Link to="/workspaces/codespaces-react/src/Home.jsx">Home</Link></li>
+              <li><Link to="/workspaces/codespaces-react/src/Use.jsx">Use</Link></li>
             </ul>
 
           </nav>
           <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/use" element={<Use />} />
+            <Route path="/workspaces/codespaces-react/src/Home.jsx" element={<Home />} />
+            <Route path="/workspaces/codespaces-react/src/Use.jsx" element={<Use />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
@@ -47,39 +37,6 @@ var MENTOR_NAME = document.getElementById("mentor_name")
 var MENTOR_EMAIL = document.getElementById("mentor_email")
 var USER_RESUME = document.getElementById("user_resume")
 
-
-const data = [ {
-  first_name : FIRST_NAME,
-  last_name : LAST_NAME,
-  user_email : USER_EMAIL,
-  mentor_name : MENTOR_NAME,
-  mentor_email : MENTOR_EMAIL,
-  user_resume : USER_RESUME
-} ]
-
-function convertToCSV(data) {
-  const headers = Object.keys(data[0]).join(',');
-  const rows = data.map(obj =>
-    Object.values(obj).map(value => `"${value}"`).join(',')
-  ).join('\n');
-  
-  return `${headers}\n${rows}`;
-}
-
-function downloadCSV(csvString, filename) {
-  const blob = new Blob([csvString], { type: 'text/csv' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = filename || 'user_data.csv';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-}
-
-const csvString = convertToCSV(data);
-downloadCSV(csvString, 'user_data.csv');
-*/
+var csv = new csv();
 
 export default App;
