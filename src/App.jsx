@@ -1,6 +1,6 @@
 import './App.css';
-import Home from 'src/Home.jsx';
-import Use from 'src/Use.jsx';
+import Home from './Home.jsx';
+import Use from './Use.jsx';
 import React from "react";
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
