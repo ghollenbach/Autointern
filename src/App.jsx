@@ -1,6 +1,6 @@
 import './App.css';
-import Home from '/workspaces/codespaces-react/src/Home.jsx';
-import Use from '/workspaces/codespaces-react/src/Use.jsx';
+import Home from './Home';
+import Use from './Use';
 
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
@@ -15,14 +15,14 @@ function App() {
                     <img src="/monkey.png" alt="AutoIntern Logo" className="logo" />
                 </Link>
               </li>
-              <li><Link to="/workspaces/codespaces-react/src/Home.jsx">Home</Link></li>
-              <li><Link to="/workspaces/codespaces-react/src/Use.jsx">Use</Link></li>
+              <li><Link to="home">Home</Link></li>
+              <li><Link to="use">Use</Link></li>
             </ul>
 
           </nav>
           <Routes>
-            <Route path="/workspaces/codespaces-react/src/Home.jsx" element={<Home />} />
-            <Route path="/workspaces/codespaces-react/src/Use.jsx" element={<Use />} />
+            <Route path="home" element={<Home />} />
+            <Route path="use" element={<Use />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
