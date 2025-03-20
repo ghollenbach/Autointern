@@ -30,6 +30,7 @@ function App() {
     );
 }
 
+/*
 var FIRST_NAME = document.getElementById("first_name")
 var LAST_NAME = document.getElementById("last_name")
 var USER_EMAIL = document.getElementById("user_email")
@@ -38,5 +39,6 @@ var MENTOR_EMAIL = document.getElementById("mentor_email")
 var USER_RESUME = document.getElementById("user_resume")
 
 var csv = new csv();
+*/
 
 export default App;
