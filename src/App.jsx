@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';  // Importing a CSS file for styling (if you want to test styling as well)
-import logo from './assets/logo.png';  // Importing an image from the assets folder
 
 function App() {
   return (
