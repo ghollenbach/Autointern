@@ -1,3 +1,22 @@
+import React from 'react';
+import './App.css';  // Importing a CSS file for styling (if you want to test styling as well)
+import logo from './assets/logo.png';  // Importing an image from the assets folder
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Welcome to My Basic App</h1>
+        <p>This is a basic React app to test paths and components!</p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+/*
 import './App.css';
 import Home from './Home.jsx';
 import Use from './Use.jsx';
@@ -40,3 +59,4 @@ var USER_RESUME = document.getElementById("user_resume")
 var csv = new csv();
 
 export default App;
+*/
