@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>Welcome to My Basic App</h1>
         <p>This is a basic React app to test paths and components!</p>
       </header>
