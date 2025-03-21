@@ -6,6 +6,7 @@ nav ul {
   align-items: center;
   background: white;
   color: black;
+  font-size: 30px;
   /*bar with names of pages in it*/
 }
 
@@ -32,7 +33,7 @@ body {
 }
 
 .logo {
-  height: 80px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
 }
 
 .nav-right {

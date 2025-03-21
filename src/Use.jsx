@@ -6,7 +6,6 @@ function Use() {
         <div>
           <header>
           <h2>Welcome to the use page</h2>
-          <p>Welcome to AutoIntern</p>
           </header>
         </div>
         <form action="/submit-form" method="post">

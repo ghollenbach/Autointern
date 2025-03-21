@@ -2,10 +2,12 @@
   body {
     background-color: white;
     text-align: center;
+    font-size: 30px;
   }
   
   form {
     background-color: white;
+    font-size: 30px;
   }
 
   br {
@@ -28,6 +30,7 @@
     border: 2px solid black;
     border-radius: 4px;
     width: 75%;
+    font-size: 30px;
   }
 
   

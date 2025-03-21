@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './Home';
 import Use from './Use';
+import React from 'react';
 
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
@@ -27,6 +28,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+
     );
 }
 
